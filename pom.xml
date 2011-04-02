@@ -7,10 +7,39 @@
     <version>1.0-SNAPSHOT</version>
     <name>muxcommander</name>
     <modules>
-	<module>commander</module>
-	<module>plugins</module>
+      <module>commons-util</module>
+      <module>commons-io</module>
+      <module>commons-runtime</module>
+      <module>commons-collections</module>
+      <module>commons-conf</module>
+      <module>commons-file</module>
+	   <module>commander</module>
+	   <!--module>plugins</module-->
+	   
     </modules>
-    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.2</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+        <sourceDirectory>src/main</sourceDirectory>
+    </build>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>

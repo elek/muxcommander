@@ -1293,7 +1293,8 @@ public class FTPFile extends ProtocolFile implements ConnectionHandlerFactory {
 	                // Note that by default, if 'LIST -l' is used, the decision to list hidden files is left to the
 	                // FTP server: some servers will choose to show them, some will not. This behavior is usually a
 	                // configuration setting of the FTP server.
-	                ftpClient.setListHiddenFiles(FTPProtocolProvider.getForceHiddenFilesListing());
+	                //TODO in mux
+	                //ftpClient.setListHiddenFiles(FTPProtocolProvider.getForceHiddenFilesListing());
 	
 	                if(encoding.equalsIgnoreCase("UTF-8")) {
 	                    // This command enables UTF8 on the remote server... but only a few FTP servers currently support this command
