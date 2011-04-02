@@ -2,11 +2,11 @@ package hu.pagavcs.mug.findfile;
 
 import java.io.IOException;
 
-import com.mucommander.file.AbstractArchiveFile;
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.ArchiveFormatProvider;
-import com.mucommander.file.filter.ExtensionFilenameFilter;
-import com.mucommander.file.filter.FilenameFilter;
+import com.mucommander.commons.file.AbstractArchiveFile;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.ArchiveFormatProvider;
+import com.mucommander.commons.file.filter.ExtensionFilenameFilter;
+import com.mucommander.commons.file.filter.FilenameFilter;
 
 public class FindFileFormatProvider implements ArchiveFormatProvider {
 

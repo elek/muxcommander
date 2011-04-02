@@ -25,7 +25,7 @@ import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
-import com.mucommander.file.AbstractFile;
+import com.mucommander.commons.file.AbstractFile;
 import com.mucommander.text.Translator;
 import com.mucommander.ui.action.ActionProperties;
 import com.mucommander.ui.dialog.DialogToolkit;

@@ -2,6 +2,7 @@ package hu.pagavcs.mug.findfile;
 
 import java.awt.event.KeyEvent;
 import java.util.Hashtable;
+import java.util.Map;
 
 import javax.swing.KeyStroke;
 
@@ -15,7 +16,7 @@ import com.mucommander.ui.main.MainFrame;
 
 public class FindFileAction extends MuAction implements InvokesDialog {
 
-	public FindFileAction(MainFrame mainFrame, Hashtable<String, Object> properties) {
+	public FindFileAction(MainFrame mainFrame, Map<String, Object> properties) {
 		super(mainFrame, properties);
 	}
 
@@ -27,7 +28,8 @@ public class FindFileAction extends MuAction implements InvokesDialog {
 
 	public static class Factory implements ActionFactory {
 
-		public MuAction createAction(MainFrame mainFrame, Hashtable<String, Object> properties) {
+		@Override
+		public MuAction createAction(MainFrame mainFrame, Map<String, Object> properties) {
 			return new FindFileAction(mainFrame, properties);
 		}
 	}

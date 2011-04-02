@@ -16,10 +16,10 @@ import java.util.regex.Pattern;
 
 import javax.swing.SwingUtilities;
 
-import com.mucommander.file.AbstractArchiveEntryFile;
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.ArchiveEntry;
-import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.commons.file.AbstractArchiveEntryFile;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.ArchiveEntry;
+import com.mucommander.commons.file.UnsupportedFileOperationException;
 import com.mucommander.ui.main.MainFrame;
 
 public class FindManager {

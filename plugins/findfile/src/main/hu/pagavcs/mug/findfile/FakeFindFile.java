@@ -8,12 +8,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Date;
 
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.FilePermissions;
-import com.mucommander.file.PermissionBits;
-import com.mucommander.file.UnsupportedFileOperationException;
-import com.mucommander.io.RandomAccessInputStream;
-import com.mucommander.io.RandomAccessOutputStream;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.FilePermissions;
+import com.mucommander.commons.file.PermissionBits;
+import com.mucommander.commons.file.UnsupportedFileOperationException;
+import com.mucommander.commons.io.RandomAccessInputStream;
+import com.mucommander.commons.io.RandomAccessOutputStream;
 
 class FakeFindFile extends AbstractFile {
 

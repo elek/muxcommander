@@ -3,9 +3,9 @@ package hu.pagavcs.mug.findfile;
 import java.io.IOException;
 import java.util.Iterator;
 
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.ArchiveEntry;
-import com.mucommander.file.ArchiveEntryIterator;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.ArchiveEntry;
+import com.mucommander.commons.file.ArchiveEntryIterator;
 
 class FindFileArchiveEntryIterator implements ArchiveEntryIterator {
 

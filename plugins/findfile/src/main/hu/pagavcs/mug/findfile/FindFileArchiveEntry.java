@@ -1,8 +1,8 @@
 package hu.pagavcs.mug.findfile;
 
 
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.ArchiveEntry;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.ArchiveEntry;
 
 public class FindFileArchiveEntry extends ArchiveEntry implements RealFileProvider {
 

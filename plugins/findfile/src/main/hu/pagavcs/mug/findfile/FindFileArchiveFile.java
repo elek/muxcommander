@@ -4,12 +4,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.mucommander.file.AbstractFile;
-import com.mucommander.file.AbstractRWArchiveFile;
-import com.mucommander.file.ArchiveEntry;
-import com.mucommander.file.ArchiveEntryIterator;
-import com.mucommander.file.FileOperation;
-import com.mucommander.file.UnsupportedFileOperationException;
+import com.mucommander.commons.file.AbstractFile;
+import com.mucommander.commons.file.AbstractRWArchiveFile;
+import com.mucommander.commons.file.ArchiveEntry;
+import com.mucommander.commons.file.ArchiveEntryIterator;
+import com.mucommander.commons.file.FileOperation;
+import com.mucommander.commons.file.UnsupportedFileOperationException;
 
 public class FindFileArchiveFile extends AbstractRWArchiveFile {
 
