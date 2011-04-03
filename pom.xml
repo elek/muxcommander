@@ -19,6 +19,18 @@
 
 
    </modules>
+   
+    <repositories>
+                  <repository>
+                        <id>anzix-old</id>
+                        <url>http://anzix.net/maven</url>
+                        <snapshots>
+                              <enabled>true</enabled>
+                        </snapshots>
+                  </repository>
+                  
+            </repositories>
+   
    <build>
       <resources>
          <resource>
