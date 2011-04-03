@@ -5,7 +5,7 @@
     <artifactId>findfile</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-
+    <name>findfile-plugin</name>
     <parent>
         <groupId>net.anzix.mux</groupId>
         <artifactId>plugins</artifactId>
@@ -13,7 +13,7 @@
     </parent>
 
     <dependencies>
-    <dependency>
+        <dependency>
             <groupId>net.anzix.mux</groupId>
             <artifactId>commander</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -27,6 +27,6 @@
             <groupId>net.anzix.mux</groupId>
             <artifactId>commons-file</artifactId>
             <version>1.0-SNAPSHOT</version>
-        </dependency>
+        </dependency>        
     </dependencies>
 </project>

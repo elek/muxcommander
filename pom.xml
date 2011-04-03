@@ -14,7 +14,9 @@
       <module>commons-conf</module>
       <module>commons-file</module>
       <module>commander</module>
-	   <!--module>plugins</module-->
+      <module>plugins</module>
+      <module>assembly</module>
+
 
    </modules>
    <build>

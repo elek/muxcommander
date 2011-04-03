@@ -26,6 +26,10 @@ import javax.swing.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import net.anzix.mux.PluginManager;
+import net.anzix.mux.hooks.ActionHook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * ActionManager provides methods to retrieve {@link MuAction} instances and invoke them. It keeps track of all the
@@ -45,7 +49,7 @@ import java.util.regex.Pattern;
  * @author Maxence Bernard, Arik Hadas
  */
 public class ActionManager {
-
+    private static Logger logger = LoggerFactory.getLogger(ActionManager.class);
     /** MuAction id -> factory map */
     private static Map<String, ActionFactory> actionFactories = new Hashtable<String, ActionFactory>();
     
@@ -200,6 +204,11 @@ public class ActionManager {
     	registerAction(new UnmarkGroupAction.Descriptor(),            		new UnmarkGroupAction.Factory());
     	registerAction(new UnpackAction.Descriptor(),             			new UnpackAction.Factory());
     	registerAction(new ViewAction.Descriptor(),              			new ViewAction.Factory());
+
+        for (ActionHook hook :PluginManager.getInstace().getPlugins(ActionHook.class)){
+           registerAction(hook.createDescriptor(),hook.createFactory());
+           logger.info("Action is loaded from plugin " + hook.getClass());
+        }
     }
 
     /**
